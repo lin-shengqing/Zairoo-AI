@@ -1,0 +1,12 @@
+name: zairoo_ai
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - streamlit==1.32.0
+    - openai>=1.41.0
+    - pydantic==2.6.3
+    - python-dotenv==1.0.1
