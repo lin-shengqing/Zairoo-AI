@@ -39,9 +39,9 @@ class GradingResult(BaseModel):
 # PART A: GENERATOR & VALIDATOR LOOP
 # ==========================================
 
-def generate_single_problem(topic: str) -> MathProblem:
+def generate_single_problem(level: str, topic: str) -> MathProblem:
     """
-    Generates a single math problem. 
+    Generates a single math problem based on level and topic. 
     Uses an Agentic Loop (Generate -> Verify) to guarantee correctness.
     """
     max_retries = 3
@@ -51,8 +51,8 @@ def generate_single_problem(topic: str) -> MathProblem:
         completion = client.beta.chat.completions.parse(
             model=MODEL_NAME,
             messages=[
-                {"role": "system", "content": "You are a Singapore MOE Primary 5 Math curriculum expert. Create challenging but solvable word problems."},
-                {"role": "user", "content": f"Generate a P5 math word problem about {topic}. Ensure calculations result in clean numbers."}
+                {"role": "system", "content": f"You are a Singapore MOE {level} Math curriculum expert. Create challenging but solvable word problems."},
+                {"role": "user", "content": f"Generate a {level} math word problem about {topic}. Ensure calculations result in clean numbers."}
             ],
             response_format=MathProblem,
             temperature=0.7
@@ -86,9 +86,9 @@ def verify_math_problem(problem: MathProblem) -> bool:
     
     return verification.choices[0].message.parsed.is_mathematically_sound
 
-def generate_problem_set(topic: str, count: int) -> list[MathProblem]:
+def generate_problem_set(level: str, topic: str, count: int) -> list[MathProblem]:
     """Generates N verified problems."""
-    return [generate_single_problem(topic) for _ in range(count)]
+    return [generate_single_problem(level, topic) for _ in range(count)]
 
 # ==========================================
 # PART B: AUTO-MARKER

@@ -15,16 +15,19 @@ if "generated_problems" not in st.session_state:
 # ==========================================
 st.header("Part A: Generate Verified Math Questions")
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 with col1:
-    topic = st.selectbox("Select Topic (Primary 5)", ["Fractions", "Ratio", "Percentage"])
+    level = st.selectbox("Grade Level", ["P5"])
 with col2:
+    topic = st.selectbox("Select Topic", ["Fractions", "Ratio", "Percentage"])
+with col3:
     count = st.number_input("Number of Questions (N)", min_value=1, max_value=5, value=1)
 
 if st.button("Generate Questions"):
-    with st.spinner("Generating and verifying math problems..."):
+    with st.spinner(f"Generating and verifying {level} math problems..."):
         try:
-            problems = ai_core.generate_problem_set(topic, count)
+            # Pass the level variable to the backend
+            problems = ai_core.generate_problem_set(level, topic, count)
             st.session_state.generated_problems = problems
             st.success("Questions generated and independently verified!")
         except Exception as e:
