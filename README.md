@@ -1,4 +1,4 @@
-# Zairoo AI — Senior AI Engineer Take-Home Assignment
+# Zairoo AI
 
 ## Overview
 This repository contains a full-stack, minimal web application built with Python and Streamlit, designed to solve the two core pain points in AI-driven primary education: LLM mathematical hallucinations and semantic grading variations. 
