@@ -26,8 +26,10 @@ This repository contains a full-stack, minimal web application built with Python
 * **The Solution (Semantic Grading):** Instead of writing complex normalizer functions in Python, I passed the grading logic back to the LLM via a highly contextualized prompt. The LLM is provided the original question, the known-correct steps, the student's working, and the student's final answer.
 * **Why this works:** LLMs possess deep semantic mapping capabilities. It intrinsically knows that `0.6` and `3/5` are equivalent representations of the same vector space. Furthermore, by passing the *working steps*, the prompt is instructed to award partial marks based on intermediate mathematical logic, mimicking a real MOE Primary school teacher's rubric.
 
-### 5. Simplicity vs. Complexity Map
+### 5. Simplicity 
 * **Where I opted for simplicity:** State management and UI. I used basic Streamlit session states rather than standing up a vector database (like ChromaDB) or a relational database, as persistence was not required for this proof of concept.
+
+### 6. Complexity
 * **Where I added complexity:** Prompt engineering and strict Pydantic schemas. Implementing the retry-loop for math validation adds backend complexity but guarantees a zero-hallucination rate for the user-facing output.
 
 ## How to Install and Run (Conda Environment)
