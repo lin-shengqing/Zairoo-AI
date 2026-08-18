@@ -63,3 +63,17 @@ VERCEL_API_KEY="API Key Here"
 ```bash
 streamlit run app.py
 ```
+
+## App Demo
+
+![Part A](./assets/Part_A.png)
+
+*   Zairoo AI allows user to select the **Grade Level**, **Topic**, **Number of Questions**
+
+---
+
+![Part ](./assets/Part_A_Questions.png)
+
+*   Once user click on **Generate Questions**, Zairoo AI will generate questions base on the selected options
+
+---
