@@ -3,7 +3,7 @@ import ai_core
 
 st.set_page_config(page_title="Zairoo AI - Math Engine", layout="wide")
 
-st.title("Zairoo AI: P5 Math Engine")
+st.title("Zairoo AI")
 st.markdown("Dynamic Question Generation and Semantic Auto-Marking")
 
 # Initialize Session State
@@ -49,7 +49,7 @@ st.divider()
 # PART B: AUTO-MARKER UI
 # ==========================================
 st.header("Part B: Auto-Marker")
-st.markdown("Test the grading engine using one of the generated questions above, or enter custom data.")
+st.markdown("Test the grading engine using one of the generated questions above")
 
 if st.session_state.generated_problems:
     # Auto-fill dropdown from generated questions
@@ -57,7 +57,6 @@ if st.session_state.generated_problems:
     selected_q = st.selectbox("Select a question to grade against:", list(q_options.keys()))
     active_problem = q_options[selected_q]
 else:
-    st.info("Generate some questions first to use the Auto-Marker, or it will run in standalone mode.")
     active_problem = None
 
 st.subheader("Student Submission")
