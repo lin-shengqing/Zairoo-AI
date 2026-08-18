@@ -21,7 +21,7 @@ with col1:
 with col2:
     topic = st.selectbox("Select Topic", ["Fractions", "Ratio", "Percentage"])
 with col3:
-    count = st.number_input("Number of Questions (N)", min_value=1, max_value=5, value=1)
+    count = st.number_input("Number of Questions", min_value=1, max_value=5, value=1)
 
 if st.button("Generate Questions"):
     with st.spinner(f"Generating and verifying {level} math problems..."):
