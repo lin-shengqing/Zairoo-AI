@@ -98,7 +98,7 @@ streamlit run app.py
 
 ![Part B Auto Marker Student Submission Words 2](./assets/Part_B_Auto_Marker_Student_Submission_Words2.png)
 
-*   Zairoo is able to perform auto marking if the student's answer is mix with **numbers and words**.
+*   Zairoo AI is able to perform auto marking if the student's answer is mix with **numbers and words**.
 *   e.g. **six** and **twelve**
 
 ---
@@ -112,6 +112,24 @@ streamlit run app.py
 ![Part B Auto Marker Student Submission Partial Incorrect1](./assets/Part_B_Auto_Marker_Student_Submission_Partial_Incorrect1.png)
 
 *   Zairoo AI can give partial grading if the **working** and **final answer** is **partially correct**.
+
+---
+
+![Part B Auto Marker Student Submission Partial Incorrect2](./assets/Part_B_Auto_Marker_Student_Submission_Partial_Incorrect2.png)
+
+*   Example of score **1/3** for incorrect answer with **partial correct working**.
+
+---
+
+![Part B Auto Marker Student Submission Incorrect 1](./assets/Part_B_Auto_Marker_Student_Submission_Incorrect1.png)
+
+*   Example of score **0/3** for incorrect answer with **wrong working**.
+
+---
+
+![Part B Auto Marker Student Submission Incorrect 2](./assets/Part_B_Auto_Marker_Student_Submission_Incorrect2.png)
+
+*   Example of score **0/3** for incorrect answer with **no working**.
 
 ---
 
