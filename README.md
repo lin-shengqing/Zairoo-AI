@@ -86,8 +86,8 @@ streamlit run app.py
 
 ![Part B Auto Marker Student Submission](./assets/Part_B_Auto_Marker_Student_Submission.png)
 
-*   Zairoo AI allows user to input the **Student's Step-by-Step Working** and **Student's Final Answer**
-*   Once user click on **Grade Submission**, Zairoo AI will shows the **Step-by-Step Analysis** and **Teacher Feedback**
+*   Zairoo AI allows user to input the **Student's Step-by-Step Working** and **Student's Final Answer**.
+*   Once user click on **Grade Submission**, Zairoo AI will shows the **Step-by-Step Analysis** and **Teacher Feedback**.
 ---
 
 ![Part B Auto Marker Student Submission Words 1](./assets/Part_B_Auto_Marker_Student_Submission_Words1.png)
@@ -99,37 +99,37 @@ streamlit run app.py
 ![Part B Auto Marker Student Submission Words 2](./assets/Part_B_Auto_Marker_Student_Submission_Words2.png)
 
 *   Zairoo AI is able to perform auto marking if the student's answer is mix with **numbers and words**.
-*   e.g. **six** and **twelve**
+    *   e.g. **six** and **twelve**
 
 ---
 
 ![Part B Auto Marker Student Submission Partial Mark](./assets/Part_B_Auto_Marker_Student_Submission_Partial_Mark.png)
 
-*   Zairoo AI can give partial grading if the **working** is incomplete, but **final answer** is **correct**.
+*   Zairoo AI can give **partial grading** of **2/3** if the **working** is incomplete, but **final answer** is **correct**.
 
 ---
 
 ![Part B Auto Marker Student Submission Partial Incorrect1](./assets/Part_B_Auto_Marker_Student_Submission_Partial_Incorrect1.png)
 
-*   Zairoo AI can give partial grading if the **working** and **final answer** is **partially correct**.
+*   Zairoo AI can give **partial grading** of **2/3** if the **working** and **final answer** is **partially correct**.
 
 ---
 
 ![Part B Auto Marker Student Submission Partial Incorrect2](./assets/Part_B_Auto_Marker_Student_Submission_Partial_Incorrect2.png)
 
-*   Example of score **1/3** for incorrect answer with **partial correct working**.
+*   Example of score **1/3** for **incorrect answer** with **partial correct working**.
 
 ---
 
 ![Part B Auto Marker Student Submission Incorrect 1](./assets/Part_B_Auto_Marker_Student_Submission_Incorrect1.png)
 
-*   Example of score **0/3** for incorrect answer with **wrong working**.
+*   Example of score **0/3** for **incorrect answer** with **wrong working**.
 
 ---
 
 ![Part B Auto Marker Student Submission Incorrect 2](./assets/Part_B_Auto_Marker_Student_Submission_Incorrect2.png)
 
-*   Example of score **0/3** for incorrect answer with **no working**.
+*   Example of score **0/3** for **incorrect answer** with **no working**.
 
 ---
 
