@@ -68,12 +68,50 @@ streamlit run app.py
 
 ![Part A](./assets/Part_A.png)
 
-*   Zairoo AI allows user to select the **Grade Level**, **Topic**, **Number of Questions**
+*   Zairoo AI allows user to select the **Grade Level**, **Topic** and **Number of Questions**
 
 ---
 
-![Part ](./assets/Part_A_Questions.png)
+![Part A Questions](./assets/Part_A_Questions.png)
 
-*   Once user click on **Generate Questions**, Zairoo AI will generate questions base on the selected options
+*   Once user click on **Generate Questions**, Zairoo AI will generate questions base on the selected options.
 
 ---
+
+![Part B Auto Marker](./assets/Part_B_Auto_Marker.png)
+
+*   Zairoo AI allows user to select the questions generated previously for auto marking.
+
+---
+
+![Part B Auto Marker Student Submission](./assets/Part_B_Auto_Marker_Student_Submission.png)
+
+*   Zairoo AI allows user to input the **Student's Step-by-Step Working** and **Student's Final Answer**
+*   Once user click on **Grade Submission**, Zairoo AI will shows the **Step-by-Step Analysis** and **Teacher Feedback**
+---
+
+![Part B Auto Marker Student Submission Words 1](./assets/Part_B_Auto_Marker_Student_Submission_Words1.png)
+
+*   Zairoo AI is able to determine that **12 orange** is also the **correct answe**r.
+
+---
+
+![Part B Auto Marker Student Submission Words 2](./assets/Part_B_Auto_Marker_Student_Submission_Words2.png)
+
+*   Zairoo is able to perform auto marking if the student's answer is mix with **numbers and words**.
+*   e.g. **six** and **twelve**
+
+---
+
+![Part B Auto Marker Student Submission Partial Mark](./assets/Part_B_Auto_Marker_Student_Submission_Partial_Mark.png)
+
+*   Zairoo AI can give partial grading if the **working** is incomplete, but **final answer** is **correct**.
+
+---
+
+![Part B Auto Marker Student Submission Partial Incorrect1](./assets/Part_B_Auto_Marker_Student_Submission_Partial_Incorrect1.png)
+
+*   Zairoo AI can give partial grading if the **working** and **final answer** is **partially correct**.
+
+---
+
