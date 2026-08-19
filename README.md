@@ -16,7 +16,7 @@ This repository contains a full-stack, minimal web application built with Python
   * **Why:** This provides seamless compatibility with OpenAI’s `gpt-4o` models while leveraging Vercel's edge caching, rate limiting, and observability. I utilized **Structured Outputs (Pydantic)** to force the LLM to return strictly typed JSON. This eliminates parsing errors and ensures the UI always receives structured arrays for step-by-step logic.
 
 ### 3. How I ensure math question correctness
-* **Solving Pain Point 1: Ensuring Math Question Correctness**
+* **Solving Pain Point 1**: Ensuring Math Question Correctness
   * **The Problem:** LLMs are linguistic engines, not calculators. They frequently generate a question text with conditions that contradict the final arithmetic.
   * **The Solution (Generator-Validator Agent Loop):** I opted for added complexity here to ensure absolute reliability. The system employs a two-pass Agentic architecture:
     1. **The Generator Agent:** Creates the question, steps, and final answer.
@@ -25,7 +25,7 @@ This repository contains a full-stack, minimal web application built with Python
   * **Trade-off:** This costs twice as many API calls per question, slightly increasing latency. However, in an educational platform where a wrong question severely impacts a child's learning trust, trading slight latency for mathematical guarantee is a necessary architectural choice.
 
 ### 4. Why the marker uses this particular parsing approach
-* **Solving Pain Point 2: The Auto-Marker Parsing Approach**
+* **Solving Pain Point 2**: The Auto-Marker Parsing Approach
   * **The Problem:** Regex or strict string-matching fails instantly on variations like `3/5`, `0.6`, `60%`, and `six tenths`. 
   * **The Solution (Semantic Grading):** Instead of writing complex normalizer functions in Python, I passed the grading logic back to the LLM via a highly contextualized prompt. The LLM is provided the original question, the known-correct steps, the student's working, and the student's final answer.
   * **Why this works:** LLMs possess deep semantic mapping capabilities. It intrinsically knows that `0.6` and `3/5` are equivalent representations of the same vector space. Furthermore, by passing the *working steps*, the prompt is instructed to award partial marks based on intermediate mathematical logic, mimicking a real MOE Primary school teacher's rubric.
